@@ -3,25 +3,48 @@
 <head>
 	<title>Navbar</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		.custom{
+			width: 700px;
+  			height: 34px;
+  			padding: 6px 12px;
+  			font-size: 14px;
+  			line-height: 1.42857143;
+  			color: #555;
+  			background-color: #fff;
+
+		}
+	</style>
 </head>
 <body>
-	<div class="container">
-	<h2>Agung Hospital</h2>
+	<div class="container" style="background: lime">
+	<div class="form-group">
+	<h1>Agung Hospital <span class="glyphicon glyphicon-plus"></span></h1>
 	<ul class="nav nav-tabs navbar-right">
 		<li role="presentation" class="active"><a href="#">Home</a></li>
 		<li role="presentation" class="active"><a href="#">Profil</a></li>
 		<li role="presentation" class="active"><a href="#">Messages</a></li>
+
 		<li role="presentation" class="active" class="dropdown">
-			<a href="#" class="dropdown-toogle" data-toogle="dropdown" role="button">Category<span class="caret"></span></a>
+			<a href="#" class="dropdown-toogle dropdown-header" data-toogle="dropdown" role="button">Category<span class="caret"></span></a>
 			<ul class="dropdown-menu">
 				<li><a href="#">Umum</a></li>
 				<li><a href="#">Jantung</a></li>
 				<li><a href="#">Ginjal</a></li>
 			</ul>
 		</li>
-
 	</ul>
+
 	</div>
+
+	
+	<form class="form-inline my-2 my-lg-0">
+      <input class="custom" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
+    <hr>
+    </div>
+
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
